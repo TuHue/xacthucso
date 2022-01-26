@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CMenu from './Menu/Menu';
 import CAction from './Action/Action';
 import "./appheader.scss";

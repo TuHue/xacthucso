@@ -1,4 +1,4 @@
-import AppContent from './AppContent/App.Content';
+import AppContent from './AppContent/AppContent';
 import AppSidebar from './AppSidebar/AppSidebar';
 import AppHeader from './AppHeader/AppHeader';
 
