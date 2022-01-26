@@ -1,0 +1,18 @@
+@import "../../../../scss/variables";
+@import "../../../../scss//mixins";
+.nguoidung {
+  &__tieude {
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: map-get($colors, "gray-3");
+    }
+  }
+  &__chucnang {
+    margin-top: 23px;
+    height: 103px;
+    @include flex(center, space-between);
+  }
+}
