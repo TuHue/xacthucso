@@ -1,15 +1,38 @@
 @import "../../../scss/variables";
+@import "../../../scss/mixins";
 
-.menuitem{
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    width:150px;
-    &__icon{
-        margin:5px;
-        color: map-get( $colors, "green-1" )
-    };
-    &__title{
-        margin: 5px;
+.menuitem {
+  display: flex;
+  line-height: 54px;
+  cursor: pointer;
+  @include flex(center, center);
+  &__icon {
+    width: 30px;
+    height: 30px;
+    background-color: map-get($colors, "while");
+    border-radius: 12px;
+    color: map-get($colors, "green-1");
+    @include flex(center, center);
+    &--1 {
+      background-color: map-get($colors, "green-1");
+      color: map-get($colors, "while");
     }
+  }
+  &__title {
+    margin-left: 11px;
+    p {
+      font-weight: 500;
+    }
+    &--1 {
+      p {
+        font-weight: 700 !important;
+      }
+    }
+  }
+  &.active {
+    background-color: map-get($colors, "green-2");
+    p {
+      color: map-get($colors, "black");
+    }
+  }
 }

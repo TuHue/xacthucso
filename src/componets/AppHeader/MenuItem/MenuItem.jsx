@@ -1,10 +1,11 @@
 import React from 'react';
 import './menuitem.scss';
 const CMenuItem = (props) => {
-    const { active, icon, title } = props;
+    const { active, icon, title, id, widthItem } = props;
+    const flagActive = (active) ? "active" : ""
     return (
-        <li className={"menuitem " + (active)}>
-            <div className="menuitem__icon">
+        <li className={"menuitem " + (flagActive) + " menuitem--" + (id)} style={{ width: (widthItem) }}>
+            <div className={"menuitem__icon " + " menuitem__icon--" + (id)}>
                 {icon}
             </div>
             <div className="menuitem__title">
