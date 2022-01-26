@@ -1,0 +1,33 @@
+@use "sass:map";
+
+.defaultlayout {
+  width: $web-width;
+  height: $web-height;
+  margin: 0;
+  padding: 0;
+  background-color: $web-bg;
+  display: flex;
+  flex-direction: row;
+
+  &__sidebar {
+    width: 275px;
+    height: 1137px;
+    background-color: map-get($colors, "while");
+    box-shadow: $box-shadow-min;
+  }
+
+  &__main {
+    padding: 20px;
+    width: 1604px;
+
+    &__header {
+      height: 139px;
+    }
+    &__content {
+      height: 909px;
+      width: 1600px;
+      
+      background-color: map-get($colors, "while");
+    }
+  }
+}
