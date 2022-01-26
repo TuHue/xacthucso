@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+
+.menuitem{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    width:150px;
+    &__icon{
+        margin:5px;
+        color: map-get( $colors, "green-1" )
+    };
+    &__title{
+        margin: 5px;
+    }
+}

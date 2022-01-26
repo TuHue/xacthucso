@@ -1,0 +1,19 @@
+@import "../../scss/variables";
+.appheader {
+  display: flex;
+  flex-direction: row;
+
+  &__menu {
+    margin-top: 15px;
+    &__parent {
+      padding: 12px 15px;
+      width: 1189px;
+      height: 54px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background-color: map-get($colors, "while");
+      border-radius:15px;
+    }
+  }
+}

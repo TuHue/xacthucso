@@ -22,11 +22,12 @@
 
     &__header {
       height: 139px;
+      width: 100%;
     }
     &__content {
       height: 909px;
       width: 1600px;
-      
+
       background-color: map-get($colors, "while");
     }
   }

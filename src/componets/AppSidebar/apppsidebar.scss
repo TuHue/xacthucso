@@ -1,5 +1,6 @@
 .apppsidebar {
   padding: 21px 13px 0 29px;
+
   &__container {
     &__img {
       margin: 15px 71px 7px 60px;
@@ -20,9 +21,9 @@
     margin-top: 23px;
     display: flex;
     flex-direction: row-reverse;
-    GiHamburgerMenu{
-        width: 15px;
-        height: 12px;
+    GiHamburgerMenu {
+      width: 15px;
+      height: 12px;
     }
   }
 }
