@@ -3,11 +3,17 @@ $web-bg:#F8F9FA;
 $web-width:1920px;
 $web-height:1137px;
 
-$box-shadow-min: rgba(0, 0, 0, 0.02)  0 3.5px 5.5px 0;
+$box-shadow-min: rgba(0, 0, 0, 0.02)  0 4px 6px 0;
+
 $colors:(
     "while":#ffffff,
     "black":#000000,
     "gray-1":rgba(128, 138, 151, 1),
+    "gray-2":#F8F9FA,
+    "gray-3":rgba(45, 55, 72, 1),
     "green-1":#29AA46,
-
+    "green-2": rgba(41, 170, 70, 0.2),
+    "red-1":rgba(255, 99, 88, 1)
 );
+
+$box-shadow-1: #F8F9FA 0 3.5px 5.5px 0;

@@ -1,0 +1,26 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+
+.action {
+  height: 54px;
+  margin-top: 15px;
+  @include flex(center, center);
+
+  &__item {
+    margin: 20px;
+  }
+  &__infor {
+    @include flex(center, center);
+    &__icon {
+      color: map-get($colors, "gray-1");
+    }
+    &__text {
+      margin-left: 10px;
+      color: map-get($colors, "gray-3");
+      font-size: 14px;
+    }
+  }
+  &__setting {
+    color: map-get($colors, "gray-1");
+  }
+}

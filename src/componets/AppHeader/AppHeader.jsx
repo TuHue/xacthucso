@@ -5,14 +5,13 @@ import "./appheader.scss";
 import constmenus from "../../commons/constant/ContMenu";
 
 const AppHeader = () => {
-
-
-
     return (
         <div className="appheader">
             <div className="appheader__menu">
                 <div className="appheader__menu__parent">
-                    <CMenu menus={constmenus} />
+                    <div className="appheader__menu__parent--container">
+                        <CMenu menus={constmenus} />
+                    </div>
                 </div>
             </div>
             <div className="appheader__actions">
