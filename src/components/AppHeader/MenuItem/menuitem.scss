@@ -23,16 +23,17 @@
     p {
       font-weight: 500;
     }
-    &--1 {
-      p {
-        font-weight: 700 !important;
-      }
-    }
+    
   }
   &.active {
-    background-color: map-get($colors, "green-2");
+    background-color: map-get($colors, "green-3");
     p {
       color: map-get($colors, "black");
+    }
+  }
+  &--1 {
+    p {
+      font-weight: 700 !important;
     }
   }
 }

@@ -27,7 +27,8 @@
     &__content {
       height: 909px;
       width: 1600px;
-
+      padding:20px;
+      border-radius:15px;
       background-color: map-get($colors, "while");
     }
   }

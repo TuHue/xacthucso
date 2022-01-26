@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+.select {
+  width: 244px;
+  height: 39px;
+  height: 40px;
+  border: 1px solid map-get($colors, "gray-1");
+  border-radius: 12px;
+  &__txt {
+    height: 26px;
+    width: 206px;
+    outline: none;
+    border: none;
+    line-height: 26px;
+    font-size: 14px;
+
+    margin: 6.5px 18px 6.5px 24px;
+    color: map-get($colors, "black");
+  }
+  &__txt:after {
+    font-weight: 500;
+    font-style: none;
+    line-height: 26px;
+  }
+}
