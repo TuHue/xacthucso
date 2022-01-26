@@ -1,0 +1,51 @@
+@import "../../../../../scss/mixins";
+@import "../../../../../scss/variables";
+
+.table {
+  width: 100%;
+
+  &__header {
+    tr {
+      padding: 6px;
+      border-bottom: 4px solid black;
+      th {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 62px;
+      align-items: center;
+      td {
+        span {
+          margin: 6px;
+        }
+      }
+    }
+    tr:nth-child(even) {
+      background-color: map-get($colors, "gray-5");
+      td {
+        border-color: map-get($colors, "gray-5");
+        display: table-cell;
+      }
+    }
+  }
+  &__stt {
+    margin-left: 5px;
+  }
+  &__footer {
+    margin-top: 17px;
+    @include flex(center, space-between);
+  }
+  &__nav,
+  &__infor {
+    @include flex(center, space-between);
+    span {
+      margin: 10px;
+    }
+  }
+}

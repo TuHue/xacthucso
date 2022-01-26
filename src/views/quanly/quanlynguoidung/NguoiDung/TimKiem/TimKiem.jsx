@@ -1,24 +1,17 @@
 import React from 'react';
-import CButton from "../../../../../components/Button/Button";
+import { CInput, CButton, CSelect } from '../../../../../components';
+import './timkiem.scss';
 
 const CTimKiem = () => {
     return (
         <div className="timkiem">
             <div className="timkiem__select">
-                <select name="cars" id="cars">
-                    <option disabled>Chọn các trường thông tin</option>
-                    <option>Tên đăng nhập</option>
-                    <option>Tên đầy đủ</option>
-                    <option>Loại người dùng</option>
-                    <option>Nhóm người dùng</option>
-                    <option>Người tạo</option>
-                    <option>Trạng thái</option>
-                </select>
+                <CSelect />
             </div>
             <div className="timkiem__input">
-                <input type="text" />
+                <CInput placeholder="Nhập giá trị" />
             </div>
-            <CButton className="btn--lg" content="Tìm kiếm"/>
+            <CButton className="btn--lg" content="Tìm kiếm" />
         </div>
     )
 }

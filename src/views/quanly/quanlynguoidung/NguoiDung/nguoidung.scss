@@ -13,6 +13,12 @@
   &__chucnang {
     margin-top: 23px;
     height: 103px;
-    @include flex(center, space-between);
+    @include flex(flex-start, space-between);
+    position: relative;
+    &__them {
+      position: absolute;
+      right:51px;
+      bottom: 10px;
+    }
   }
 }

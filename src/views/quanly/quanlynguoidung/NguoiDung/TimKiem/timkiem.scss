@@ -1,0 +1,12 @@
+@import '../../../../../scss/mixins';
+
+.timkiem{
+   
+    display: flex;
+    align-content: flex-start;
+    &__select,
+    &__input{
+        margin-right:13px;
+    }
+    
+}
