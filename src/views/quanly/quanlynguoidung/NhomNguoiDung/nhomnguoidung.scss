@@ -1,0 +1,41 @@
+.listgroupuser{
+    padding: 24px;
+    &__search{
+        margin: 33px auto;
+        // &__select{
+           
+        .ant-select-selector{
+            width: 304px;
+            height: 39px;
+            border-radius: 15px;
+        }
+               
+        // }
+        &__input{
+            width: 304px;
+            height: 39px;
+            border-radius: 15px;
+            margin-left: 15px;
+        }
+        &__button{
+            width: 115px;
+            height: 39px;
+            border-radius: 15px;
+            background-color: #29AA46;
+            color: #fff;
+            margin-left: 15px;
+        }
+    }
+    &__add{
+        float: right;
+        &__button{
+            width: 115px;
+            height: 39px;
+            border-radius: 15px;
+            background-color: #29AA46;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    }
+}
+
