@@ -2,15 +2,14 @@
     padding: 24px;
     &__search{
         margin: 33px auto;
-        // &__select{
-           
-        .ant-select-selector{
+        &__select{
             width: 304px;
-            height: 39px;
+            .ant-select-selector{
+                height: 39px;
             border-radius: 15px;
+            }
+            
         }
-               
-        // }
         &__input{
             width: 304px;
             height: 39px;

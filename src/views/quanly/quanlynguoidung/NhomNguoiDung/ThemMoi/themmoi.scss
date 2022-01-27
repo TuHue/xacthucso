@@ -1,0 +1,60 @@
+.modalthemmoi{
+    
+    .ant-modal-content{
+        width: 730px;
+        height: 364px;
+        border-radius: 15px;
+        .ant-modal-header{
+            background-color: #29AA46;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            padding-left: 60px;
+            height: 53px;
+        }
+        .ant-modal-footer{
+            padding-right: 125px;
+            margin-top: -24px;
+            height: 50px;
+        }
+    }
+
+    &__content{
+        // display: block;
+        margin-right: 125px;
+        &__form{
+            margin-top: 14px;
+            &__input{
+                width: 337px;
+                height: 30px;
+                border-radius: 15px;              
+            }
+            .ant-form-item-control-input{
+                width: 337px;
+                height: 30px;
+                margin-bottom: 12px;
+                .ant-select-selector{
+                border-radius: 15px;
+                }
+            }
+            // &__select{
+                
+            // }
+            &__textarea{
+                width: 337px;
+                border-radius: 15px;   
+                height: 63px;
+            }
+        }
+    }
+
+    &__button{
+        width: 117px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #29AA46;
+        color: #fff;
+        border: #a3c7ab;
+    }
+
+
+}
