@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Table, Button, Input, Select } from "antd";
 import ThemMoi from "./ThemMoi/ThemMoi";
+import {AiOutlineInfoCircle} from "react-icons/ai";
+import {FiSettings} from "react-icons/fi";
 import "./nhomnguoidung.scss";
 
 const { Option } = Select;
@@ -44,7 +46,7 @@ const columns = [
   {
     title: "Chức năng",
     dataIndex: "chucnang",
-    sorter: true,
+    render: chucnang => <a><AiOutlineInfoCircle/>  <FiSettings/></a>
     // width: '20%',
   },
 ];
