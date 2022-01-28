@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.ant-switch-checked{
+    background-color: #29AA46;
+    margin-right: 10px;
+}
+
+::placeholder{
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    font-weight: 50;
+}
+
+.modadangnhap{
+    width: 500px;
+    height: auto;
+    left: 50%;
+    &__page{
+        position: relative;
+        border-radius: 15px;
+        z-index: 1;
+        background: #FFFFFF;
+        width: 588px;
+        height: 618px;
+        margin: 60px auto 100px;
+        padding: 45px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        left: 500px;
+        &__header{
+            text-align: center;
+            display: block;
+            img{
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 130%;
+                color: #29AA46;
+            }
+        }
+        &__content{
+            input{
+                width: 100%;
+                height: 45px;
+                border: 1px solid rgb(206, 206, 206);
+                border-radius: 15px;
+                display: inline-block;
+                padding-left: 20px;
+            }
+            label{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            &__check{
+                margin: 10px 60px;
+            }
+            &__footer{
+                &__btn{
+                    height: 45px;
+                    border: none;
+                    text-decoration: none;
+                    display: block;
+                    font-size: 16px;
+                    color: #FFF;
+                    margin-bottom: 15px;
+
+                    text-align: center;
+                    background: linear-gradient(90deg, #26BD4C 0%, #20DF56 100%);
+                    border-radius: 12px;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 0px 8px;
+                    width: 79%;
+                    margin-left: 60px;
+                }
+                &__member{
+                    text-align: center;
+                    padding: 10px auto;
+                    font-weight: bold;
+
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                }
+                &__link{
+                    text-decoration: none;
+                    font-size: 13px;
+                    color: #29AA46;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- GENERAL ---------- */
+
+// body {
+//     background: #f2f2f2;
+//     /* fallback for old browsers */
+//     font-family: "Roboto", sans-serif;;
+//     font-style: normal;
+//     line-height: 1.5;
+//     margin: 0;
+// }
+
+/* ---------- ALIGN ---------- */
+
+
+.modal-input{
+    margin: 10px 60px;
+ }
+
+ .modal-btn{ 
+     text-align: center;
+    //  word-spacing: 2px;
+ }
+
+/* ---------- BUTTON ---------- */
+
+/* ---------- ICONS ---------- */
+
+
+.modal-icon{
+    font-size: 7px;
+    color: rgb(124, 124, 124);
+    padding: auto 10px;
+}
+
+/* ---------- LOGIN ---------- */
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}

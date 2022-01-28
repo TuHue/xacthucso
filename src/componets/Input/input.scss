@@ -1,0 +1,15 @@
+.componentinput{
+    &__icon{
+        font-size: 7px;
+        color: rgb(124, 124, 124);
+        padding: auto 10px;
+    }
+    &__input{
+        width: 100%;
+        height: 45px;
+        border: 1px solid rgb(206, 206, 206);
+        border-radius: 15px;
+        display: inline-block;
+        padding-left: 20px;
+    }
+}
