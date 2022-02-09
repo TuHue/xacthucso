@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Table, Button, Input, Select } from "antd";
 import ThemMoi from "./ThemMoi/ThemMoi";
+import PhanQuyen from './PhanQuyen/PhanQuyen';
+import ChiTiet from './ChiTietThongTin/ChiTietThongTin';
+import ChinhSua from './ChinhSua/ChinhSua';
 import {AiOutlineInfoCircle} from "react-icons/ai";
 import {FiSettings} from "react-icons/fi";
 import "./nhomnguoidung.scss";
@@ -104,9 +107,13 @@ const NhomNguoiDung = () => {
           className="listgroupuser__add__button"
           onClick={hanldeOpenModal} > + Thêm mới
         </Button>
-        <ThemMoi openModalThemMoi={openModal} />
+      <ThemMoi openModalThemMoi={false} />
+      <ChiTiet openModalChiTiet={false} />
+      <ChinhSua openModalChinhSua={true}/>
       </div>
+
       <Table columns={columns} dataSource={data} pagination={true} />
+      <PhanQuyen openModalPhanQuyen={false}/>
     </div>
   );
 };

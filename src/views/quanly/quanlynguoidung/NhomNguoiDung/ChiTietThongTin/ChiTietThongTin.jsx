@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import { Modal, Button, Form, Select, Input } from "antd";
-import "./phanquyen.scss";
+import "./chitietthongtin.scss";
 
-function PhanQuyen(props) {
-    const [openModal, setOpenModal] = useState(props.openModalPhanQuyen);
+function ChiTietThongTin(props) {
+    const [openModal, setOpenModal] = useState(props.openModalChiTiet);
     const handleCancel = () => {
       setOpenModal(false);
     };
@@ -13,16 +13,16 @@ function PhanQuyen(props) {
   return (
          <Modal
         // className="modalthemmoi"
-        className='modalphanquyen'
+        className='modalchitiet'
         visible={openModal}
         onOk={handleOk}
         onCancel={handleCancel}
-        title=" PHÂN QUYỀN CHỨC NĂNG"
+        title="CHI TIẾT THÔNG TIN NHÓM NGƯỜI DÙNG"
         footer={[
           <Button
             key="back"
             onClick={handleCancel}
-            className="modalphanquyen__button"
+            className="modalchitiet__button"
           >
             Thoát
           </Button>
@@ -33,4 +33,4 @@ function PhanQuyen(props) {
   );
 }
 
-export default PhanQuyen;
+export default ChiTietThongTin;
