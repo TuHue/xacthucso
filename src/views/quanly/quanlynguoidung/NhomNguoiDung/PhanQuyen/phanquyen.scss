@@ -5,11 +5,55 @@
         height:634px;
         border-radius: 15px;
         .ant-modal-header{
-            background-color: #29AA46;
+            background-color: #29aa453c;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
-            padding-left: 60px;
-            height: 53px;
+            padding-left: 60px; 
+            height: 53px;     
+            .ant-modal-title{
+                font-size: 18px;
+            }
+        }
+        .ant-modal-body{
+            .ant-table{
+                border: 1px solid #e6e5e5; 
+                .ant-table-content{
+                    .ant-table-thead{
+                        .ant-table-cell{
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 150%;
+                            font-style: normal;
+                            text-align: center;
+                            border: 1px solid e6e5e5;
+
+                        }
+                    }
+                    .ant-table-tbody{
+                        .ant-table-row{
+                            .ant-table-cell{
+                            border: 1px solid e6e5e5;
+                                li{
+                                    margin-bottom: 6px;
+                                }
+
+                                .ant-btn {
+                                    background-color: #29AA46;
+                                    color: #fff;
+                                    border-radius: 15px;
+                                    width: 29px;
+                                    height: 16px;
+                                   
+                                }
+                                
+                                .ant-switch-checked {
+                                    background-color: #29AA46;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .ant-modal-footer{
             padding-right: 125px;
@@ -27,3 +71,4 @@
         border: #a3c7ab;
     }
 }
+

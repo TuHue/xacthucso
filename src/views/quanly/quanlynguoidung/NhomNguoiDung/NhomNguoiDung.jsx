@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Table, Button, Input, Select } from "antd";
 import ThemMoi from "./ThemMoi/ThemMoi";
-import PhanQuyen from './PhanQuyen/PhanQuyen';
-import ChiTiet from './ChiTietThongTin/ChiTietThongTin';
-import ChinhSua from './ChinhSua/ChinhSua';
-import {AiOutlineInfoCircle} from "react-icons/ai";
-import {FiSettings} from "react-icons/fi";
+import PhanQuyen from "./PhanQuyen/PhanQuyen";
+import ChiTiet from "./ChiTietThongTin/ChiTietThongTin";
+import ChinhSua from "./ChinhSua/ChinhSua";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { FiSettings } from "react-icons/fi";
 import "./nhomnguoidung.scss";
 
 const { Option } = Select;
@@ -49,7 +49,11 @@ const columns = [
   {
     title: "Chức năng",
     dataIndex: "chucnang",
-    render: chucnang => <a><AiOutlineInfoCircle/>  <FiSettings/></a>
+    render: (chucnang) => (
+      <a>
+        <AiOutlineInfoCircle /> <FiSettings />
+      </a>
+    ),
     // width: '20%',
   },
 ];
@@ -85,36 +89,41 @@ const NhomNguoiDung = () => {
     console.log(openModal);
   };
   return (
-    <div className="listgroupuser">
-      <h3> DANH SÁCH NHÓM NGƯỜI DÙNG </h3>
-      <div className="listgroupuser__search">
-        <Select
-          className="listgroupuser__search__select"
-          defaultValue="Chọn trường"
-          placeholder="Chọn trường thông tin"
-        >
-          <Option value="NhomNguoiDung"> Nhóm người dùng </Option>
-          <Option value="NguoiDung"> Người dùng </Option>
-        </Select>
-        <Input
-          className="listgroupuser__search__input"
-          placeholder="Nhập giá trị"
-        />
-        <Button className="listgroupuser__search__button"> Tìm kiếm </Button>
-      </div>
-      <div className="listgroupuser__add">
-        <Button
-          className="listgroupuser__add__button"
-          onClick={hanldeOpenModal} > + Thêm mới
-        </Button>
-      <ThemMoi openModalThemMoi={false} />
-      <ChiTiet openModalChiTiet={false} />
-      <ChinhSua openModalChinhSua={true}/>
-      </div>
+    <>
+      <div className="listgroupuser">
+        <h3> DANH SÁCH NHÓM NGƯỜI DÙNG </h3>
+        <div className="listgroupuser__search">
+          <Select
+            className="listgroupuser__search__select"
+            defaultValue="Chọn trường"
+            placeholder="Chọn trường thông tin"
+          >
+            <Option value="NhomNguoiDung"> Nhóm người dùng </Option>
+            <Option value="NguoiDung"> Người dùng </Option>
+          </Select>
+          <Input
+            className="listgroupuser__search__input"
+            placeholder="Nhập giá trị"
+          />
+          <Button className="listgroupuser__search__button"> Tìm kiếm </Button>
+        </div>
+        <div className="listgroupuser__add">
+          <Button
+            className="listgroupuser__add__button"
+            onClick={hanldeOpenModal}
+          >
+            {" "}
+            + Thêm mới
+          </Button>
+        </div>
 
-      <Table columns={columns} dataSource={data} pagination={true} />
-      <PhanQuyen openModalPhanQuyen={false}/>
-    </div>
+        <Table columns={columns} dataSource={data} pagination={true} />
+      </div>
+      <ThemMoi openModalThemMoi={false} />
+      <ChiTiet openModalChiTiet={true} />
+      <ChinhSua openModalChinhSua={false} />
+      <PhanQuyen openModalPhanQuyen={false} />
+    </>
   );
 };
 export default NhomNguoiDung;

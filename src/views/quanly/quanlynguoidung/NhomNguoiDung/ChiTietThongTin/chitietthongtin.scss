@@ -2,14 +2,17 @@
   
     .ant-modal-content{
         width: 728px;
-        height:634px;
+        height: 877px;
         border-radius: 15px;
         .ant-modal-header{
-            background-color: #29AA46;
+            background-color: #29aa453c;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
             padding-left: 60px;
             height: 53px;
+            .ant-modal-title{
+                font-size: 18px;
+            }
         }
         .ant-modal-footer{
             padding-right: 125px;
@@ -25,5 +28,22 @@
         background-color: #29AA46;
         color: #fff;
         border: #a3c7ab;
+    }
+}
+
+.tablethongtin{
+    &__title{
+        &__name{
+            float: left;
+            padding-left: 45px;
+        }
+        &__button{
+            float: right;
+            background-color: #29AA46;
+            color: white;
+            width: 65px;
+            height: 30px;
+            border-radius: 15px;
+        }
     }
 }
